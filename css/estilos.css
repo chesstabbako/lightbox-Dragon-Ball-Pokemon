@@ -1,0 +1,578 @@
+*{
+      
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+}
+
+body{
+      
+      font-family: Sans-Serif;
+      
+}
+
+header{
+
+      position: relative;
+      height: 100vh;
+      background-image: linear-gradient(to top, rgba(10, 14, 250, 0.5)0%, 
+      rgba(251, 194, 235, 0.5)100%), url(../img/goku.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      align-items: center;
+      
+}
+
+.contenedor{
+      
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px;
+      
+}
+
+.cabe{
+      
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 4px 0px 4px rgba(0,0,0,.7);
+      font-weight: bold;
+      font-size: 35px;
+      bottom: 20px;
+      
+}
+
+.icon-menu{
+      
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+      color: white;
+      display: block;
+      width: 60px;
+      height: 60px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 2px 1px 4px rgba(0,0,0,0.5);
+      text-align: center;
+      padding: 5px;
+      z-index: 100;
+
+}
+
+/* nav */
+
+.nav-cabezal{
+      
+      display: flex;
+      position: fixed;
+      top: 0;
+      right:0;
+      width: 50vw;
+      height: 100vh;
+      background: rgba(100, 14, 250, 0.5);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      transform: translate(110%);
+      transition: .3s ease all;
+      z-index:50;
+      
+}
+
+.entraNav{
+      
+        transform: translate(0%);
+      
+}
+
+.nav-cabezal a{
+      
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-decoration: none;
+      
+}
+
+.nav-cabezal a:hover{
+      
+      text-shadow: 2px 1px 3px rgba(15, 55, 125, .65);
+      
+}
+
+/* nav */
+
+.servicios{
+      
+   background: linear-gradient(to top, rgba(134,38, 212,.1), rgba(34,138, 12,.15));
+   width: 100vw;
+   padding: 40px;
+   
+}
+
+.cont-serv{
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px;
+      
+}
+
+.serv-img{
+      
+      width: 45%;
+      height:100%;
+      padding: 20px;
+      overflow: hidden;
+      
+}
+
+.serv-img img{
+      
+      display:block;
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+      
+}
+
+.titulo2{
+      
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+      margin: 20px auto;
+      display: block;
+      
+}
+
+.puntosGeneral{
+      
+      padding: 5px;
+      height: 500px;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      
+}
+
+.puntoInd{
+      
+      border: none;
+      box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+      padding: 5px;
+     
+      
+}
+
+.puntoInd h3{
+      
+      color: magenta;
+      text-shadow: 2px 1px 2px rgba(0,0,0,.4);
+      margin-bottom: 10px;
+}
+
+span{
+      
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: purple;
+      color: white;
+      font-weight: bold;
+      margin-right: 5px;
+      text-align: center;
+      line-height: 30px;
+}
+
+.puntoInd p{
+      
+      display: block;
+      margin-bottom: 5px;
+      color: midNightBlue;
+      text-align: justify;
+       font-size: 0.9em;
+      
+}
+
+/*-----------------------------*/
+
+.galeria{
+      
+    background: linear-gradient(to top, rgba(14,243, 212,.2), rgba(84,138, 112,.25));
+      
+}
+
+.images{
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      
+}
+
+.div-img{
+      
+     width: 30%;
+     height: 250px;
+     padding:10px;
+     object-fit: cover;
+     border: none;
+     box-shadow: 2px 2px 4px rgba(60,0,0,0.3);
+     margin-bottom: 10px;
+     border-radius: 10px;
+      
+}
+
+.img{
+      
+     dihhsplay:block;
+     width: 100%;
+     height: 100%;
+     border-radius: 10px;
+      
+}
+
+.lightBox{
+      
+      position: fixed;
+      background: linear-gradient(to top, rgba(14,243, 212,.7), rgba(84,138, 112,.45));
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      transform: translate(110%);
+      transition: ease-in-out 0.3s all;
+      
+}
+
+.lightEntra{
+      
+       transform: translate(0);
+      
+}
+
+.icon-x{
+      
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 50px;
+      font-weight: bold;
+      color: white;
+      width: 70px;
+      height: 70px;
+      border: none;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      padding: 5px;
+      text-align: center;
+      cursor: pointer;
+      
+      
+}
+
+.icon-x:hover{
+      
+      color: dimGray;
+      
+}
+
+.lightImg{
+      
+      width: 40%;
+      height: 70%;
+
+}
+
+.insertar-img{
+      
+      width: 100%;
+      height:100%;
+      border-radius: 10px;
+      box-shadow: 2px 0px 3px rgba(0,0,0,0.4);
+      transition: transform 0.3s all;
+      transform: scale(0);
+      
+}
+
+.img-aparece{
+      
+      transform: scale(1);
+      
+}
+
+@media screen and (max-width: 1200px){
+      
+      .puntosGeneral{
+            
+            height: 700px;
+            padding: 10px;
+            
+            
+      }
+      
+      .puntoInd h3, span, .puntoInd p{
+            
+            font-size: 0.95em;
+            
+      }
+      
+}
+
+@media screen and (max-width: 800px){
+      
+      .icon-menu{
+            top: 10px;
+            right:10px;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            box-shadow: 1px 2px 4px rgba(250,50, 0, 0.1);
+            
+      }
+      
+      .lightImg{
+            
+            height: 60%;
+            
+      }
+      
+       .puntoInd h3, span, .puntoInd p{
+            
+            font-size: 0.8em;
+            
+      }
+      
+      .div-img{
+            
+            width: 40%;
+            
+      }
+      
+      
+}
+
+@media screen and (max-width: 700px){
+      
+       .lightImg{
+            
+            height: 50%;
+            
+      }
+      
+      .cabe h1, .cabe p{
+            
+             font-size: 0.75em;
+            
+      }
+      
+      .puntoInd h3, span, .puntoInd p{
+            
+            font-size: 0.75em;
+            
+         }
+      
+      .puntosGeneral{
+      
+             height: 600px;
+            margin-top: 10px;
+            
+      }
+      
+      .div-img{
+            
+            height: 230px;
+            
+      }
+      
+      .nav-cabezal{
+            
+            width: 100vw;
+            
+      }
+      
+}
+
+@media screen and (max-width: 600px){
+      
+        .nav-cabezal{
+               
+               width: 100vw;
+               
+         }
+      
+      .lightImg{
+            
+            height: 45%;
+            
+      }
+      
+        .puntoInd h3, span, .puntoInd p{
+            
+            font-size: 0.7em;
+            
+         }
+      
+      
+        .puntosGeneral{
+            
+             width: 100%;
+             height: 450px;
+            margin-top: 20px;
+            
+         }
+      
+        .div-img{
+            
+            height: 190px;
+            
+         }
+         
+         .serv-img{
+       
+               width: 80%;
+               border-radius: 50%;
+               
+         }
+      
+      
+}
+
+@media screen and (max-width: 500px){
+      
+        .lightImg{
+            
+            height: 40%;
+            
+      }
+      
+       .cabe h1, .cabe p{
+            
+             font-size: 0.62em;
+            
+      }
+      
+          .puntoInd h3, span, .puntoInd p{
+            
+            font-size: 0.6em;
+            
+         }
+      
+      
+        .puntosGeneral{
+            
+             width: 100%;
+             height: 450px;
+            margin-top: 20px;
+            
+         }
+      
+        .div-img{
+            
+            height: 150px;
+            
+         }
+         
+         .serv-img{
+       
+               width: 80%;
+               border-radius: 50%;
+               
+         }
+      
+}
+
+@media screen and (max-width: 400px){
+
+        .lightImg{
+            
+            height: 30%;
+            
+        }
+      
+       .cabe h1, .cabe p{
+            
+             font-size: 0.45em;
+            
+      }
+      
+          .puntoInd h3, span, .puntoInd p{
+            
+            font-size: 0.5em;
+            
+         }
+      
+      
+        .puntosGeneral{
+            
+             width: 100%;
+             height: 500px;
+            margin-top: 10px;
+            
+         }
+      
+        .div-img{
+            
+            height: 140px;
+            
+         }
+         
+         .serv-img{
+       
+               width: 80%;
+               border-radius: 50%;
+               
+         }
+      
+}
+
+@media screen and (max-width: 400px){
+      
+         .puntoInd h3, span, .puntoInd p{
+            
+            font-size: 0.5em;
+            
+         }
+      
+      
+        .puntosGeneral{
+            
+             width: 100%;
+             height: 500px;
+            margin-top: 10px;
+            
+         }
+      
+        .div-img{
+            
+            height: 100px;
+            
+         }
+         
+         .serv-img{
+       
+               width: 80%;
+               border-radius: 50%;
+               
+         }
+      
+}
